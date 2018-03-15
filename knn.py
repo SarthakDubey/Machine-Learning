@@ -109,7 +109,7 @@ if __name__ == '__main__':
 		if i % 50 == 0:
 			print("on prediction {}".format(i))
 			t = time.clock()
-		preds.append(single_predict(random_homes[i], ))
+		preds.append(single_predict(random_homes[i], homes))
 		if i % 50 == 0:
 			print("prediction took {} seconds".format(time.clock() - t))
 	print("done with 5000 predictions!")
